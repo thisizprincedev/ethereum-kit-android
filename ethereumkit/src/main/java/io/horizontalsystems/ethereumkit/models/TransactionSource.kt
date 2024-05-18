@@ -26,7 +26,7 @@ class TransactionSource(val name: String, val type: SourceType) {
         fun dotBlox(): TransactionSource {
             return TransactionSource(
                     "dotblox.io",
-                    SourceType.Etherscan("http://explorer.dotblox.io", "http://explorer.dotblox.io", "")
+                    SourceType.Etherscan("https://explorer.dotblox.io", "https://explorer.dotblox.io", "")
             )
         }
 
