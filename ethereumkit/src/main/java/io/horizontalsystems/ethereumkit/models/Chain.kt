@@ -1,13 +1,14 @@
 package io.horizontalsystems.ethereumkit.models
 
 enum class Chain(
-    val id: Int,
-    val coinType: Int,
-    val gasLimit: Long,
-    val syncInterval: Long,
-    val isEIP1559Supported: Boolean
+        val id: Int,
+        val coinType: Int,
+        val gasLimit: Long,
+        val syncInterval: Long,
+        val isEIP1559Supported: Boolean
 ) {
     Ethereum(1, 60, 2_000_000, 15, true),
+    DotBlox(1, 60, 2_000_000, 15, true),
     BinanceSmartChain(56, 60, 10_000_000, 15, false),
     Polygon(137, 60, 10_000_000, 15, true),
     Optimism(10, 60, 10_000_000, 15, false),
